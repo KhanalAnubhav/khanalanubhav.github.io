@@ -54,15 +54,58 @@
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tbody>
+              <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
+                  <td style="padding:5px;width:25%;vertical-align:middle">
+                      <div class="one">
+                          <div class="two" id='nuvo_image'>
+                              <video width=100% muted autoplay loop>
+                                  <source src="videos/ihuman_video.mp4" type="video/mp4">
+                                  Your browser does not support the video tag.
+                              </video>
+                          </div>
+                          <img src='images/ihuman.png' width=100%>
+                      </div>
+                      <script type="text/javascript">
+                          function nuvo_start() {
+                              document.getElementById('nuvo_image').style.opacity = "1";
+                          }
 
+                          function nuvo_stop() {
+                              document.getElementById('nuvo_image').style.opacity = "0";
+                          }
 
-
-
-    
- 
-
+                          nuvo_stop()
+                      </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                      <a href="https://pramishp.github.io/iHuman/index.html">
+                          <span class="papertitle">iHuman: Instant Animatable Digital Humans From Monocular Videos</span>
+                      </a>
+                      <br>
+                      <a href="https://pramishp.github.io/"> <strong>Pramish Paudel</strong></a>,
+                      <a href="https://khanalanubhav.github.io/">Anubhav Khanal</a>,
+                      Danda Pani Paudel,
+                      Jyoti Tandukar,
+                      <a href="https://ajadchhatkuli.github.io">Ajad Chhatkuli</a>
+                      <br>
+                      <b><em>ECCV</em>, 2024 </b>
+                      <br>
+                      <a href="https://pramishp.github.io/iHuman/index.html">project page</a>
+                      /
+                      <a href="https://youtu.be/W5xG2GYfUM0">video</a>
+                      /
+                      <a href="https://arxiv.org/abs/2407.11174">arXiv</a>
+                      <p></p>
+                      <p>
+                          iHuman lets you reconstruct high fidelity 3D Gaussian Splats and 3D Mesh from monocular
+                          video of moving humans.
+                      </p>
+                  </td>
+              </tr>
           </tbody></table>
+
 
           
 <!--           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
